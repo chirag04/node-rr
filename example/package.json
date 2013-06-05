@@ -1,0 +1,11 @@
+{
+  "name": "node-rr-examples",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "riak-js": "*",
+    "redis": "*"
+  }
+}

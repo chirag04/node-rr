@@ -1,0 +1,22 @@
+{
+    "name": "node-rr",
+    "version": "0.1.0",
+    "description": "save redis data to riak",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/chirag04/node-rr.git"
+    },
+    "homepage": "https://github.com/chirag04/node-rr",
+    "keywords": [
+        "riak",
+        "redis",
+        "redis to riak"
+    ],
+    "author": {
+        "name": "Chirag Jain",
+        "email": "jain_chirag04@yahoo.com",
+        "url": "http://chiragjain.tumblr.com"
+    },
+    "license": "MIT"
+}
