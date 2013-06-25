@@ -1,6 +1,6 @@
 {
     "name": "node-rr",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "save redis data to riak",
     "main": "index.js",
     "repository": {
