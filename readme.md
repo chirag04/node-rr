@@ -24,6 +24,9 @@ rr.save(key, bucket, function(err, result){
   // doing something with the result.
   console.log(result);
 });
+
+// reads from a redis list at given key and save it in riak bucket
+rr.saveList(key, bucket, function(err, result){})
 ```
 
 # install
