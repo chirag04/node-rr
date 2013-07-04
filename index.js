@@ -27,7 +27,11 @@ rr.prototype.saveList = function(key, bucket, cb) {
 		if(err) return cb(err);
 		if(!res) return cb(new Error('Key not found in redis.'));
 		_this.riak.get(bucket, key, function(err, riakData){
-			var allChat = riakData + '<br>' + redisData.join('<br>');
+			riakData = JSON.parse(riakData);
+			redisData.foreach(function(data,index){
+				riakData.push(JSON.parse(data));
+			});
+			var allChat = JSON.stringify(riakData);
 			_this.riak.save(bucket, key, allChat, function(err){
 				if(err) return cb(err);
 				cb(null, allChat);
